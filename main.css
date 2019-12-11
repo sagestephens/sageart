@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: ghostwhite url(img/LogoMakr_8U8nKc.png) no-repeat center ;
+  color: deepskyblue;
+  background-size:400px;
+}
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:deepskyblue;
+  color: white;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg1 {
+  background-color: #aaa;
+  width: 100%;
+  background-image:url(img/Optimized-sart.fw.png);
+  background-position: center;
+  background-size:450px;
+  background-repeat:no-repeat;
+  object-fit:cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fakeimg2 {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  width: 400px;
+  padding:0px;
+  border-radius: 30px;
+
+}
+
+.profile{
+  border-radius:45px;
+  height:340px;
+
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: grey;
+  width: 100%;
+}
+
+.column {
+  font-size:16px;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px; 
+  text-align:left;
+  color:ghostwhite;
+  opacity: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tit{
+font-family: 'Courier New', Courier, monospace;
+font-size:40px; 
+text-align:center;
+}
+
+.column1{
+  text-align: center;
+}
+
+.column2{
+  text-align:center;
+}
+
+.column3{
+  text-align:center;
+}
+hr{
+  margin:auto;
+  width:40%;
+}
+
+#mc_embed_signup {
+  background:grey; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+  width:100%;
+  color:ghostwhite;
+}
+
+.srh{
+  position: relative;
+  float:right;
+  margin-top:10px;
+  margin-right:20px;
+  border-radius:45px;
+  padding:5px;
+  padding-left: 10px;
+  outline: none;
+  overflow: hidden;
+  border:none;
+  height: auto;
+}
+
+.containerP{
+  width:auto;
+  flex:auto;
+  background-image:linear-gradient(to right,lightblue,lightgrey);
+  height: auto;
+}
+
+.vidheading{
+  color:white;
+  text-align:center;
+  padding:12px 20px;
+  text-shadow: #333;
+  font-size: 50px;
+}
+
+.btn{
+  background-color:rgb(124, 221, 253);
+  border:none;
+  color:white;
+  cursor: pointer;
+  padding:12px 20px;
+  font-size:15px;
+  position: inherit;
+  outline:none;
+  float:right;
+  transition: width 3s;
+  transition-timing-function: ease-out;
+  transition-delay: 1s;
+}
+
+.btn:hover{
+  width:160px;
+}
+
+.vid1{
+  height: auto;
+  margin-left: 26%;
+  padding:20px 20px;
+  box-shadow:  0px 4px #333;
+  outline: none;
+}
+
+.vidpara{
+  padding:10px;
+  margin:10px;
+  margin-bottom:50px;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.container{
+  border:2px #333 solid;
+  background-color:lightgrey;
+  border-radius: 5px;
+  padding:16px;
+  margin:16px 0px;
+}
+
+.cotainer::after{
+  content:"";
+  clear:both;
+  display: table;
+}
+.container img{
+  float:left;
+  margin-right:20px;
+  border-radius:50%;
+}
+
+.container span{
+  font-size:20px;
+  margin-right:16px;
+}
+
+.myTypewriter h1 {
+  overflow: hidden; 
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  min-height: 25px;
+  animation: typing 3.5s steps(40, end),blink-caret .75s step-end infinite;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width:100%;
+    align-content: inherit; 
+  }
+  .sidheading{
+    text-align:center;
+  }
+  .srh{
+    display:none;
+  }
+
+  .row {   
+    flex-direction: column;
+  }
+  .btn{
+    float:left;
+  }
+
+  .containerP{
+    align-content: inherit;
+    width:100%; 
+  }
+.vid1{
+  max-width:400px;
+  margin-left:0px;
+  position:fixed;                                                                                                        
+}
+
+.mailsend{
+  outline:none;
+  display:block;
+  overflow: hidden;
+  color:rebeccapurple;
+
+}
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+  .srh{
+    display:none;
+  }
+.containerP{
+  display: inline-block;
+}
+.sidheading{
+  text-align:center; 
+}
+}
+
+@media screen and (max-width: 400px) {
+  .navbar{
+   display: inline;
+  }
+  .srh{
+    display:none;
+  } 
+  .sidheading{
+    text-align:center;
+  }
+
+}
